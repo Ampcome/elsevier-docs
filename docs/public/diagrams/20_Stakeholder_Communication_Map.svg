@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="35" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Stakeholder Communication Map</text>
+  <text x="450" y="55" font-size="12" fill="#64748b" text-anchor="middle">Who to contact for different types of issues</text>
+
+  <!-- Central: You (Permissions Specialist) -->
+  <circle cx="450" cy="300" r="50" fill="#3b82f6" filter="url(#shadow)"/>
+  <text x="450" y="295" font-size="12" font-weight="bold" fill="white" text-anchor="middle">YOU</text>
+  <text x="450" y="310" font-size="9" fill="#dbeafe" text-anchor="middle">Permissions</text>
+  <text x="450" y="322" font-size="9" fill="#dbeafe" text-anchor="middle">Specialist</text>
+
+  <!-- Team Lead -->
+  <circle cx="450" cy="140" r="40" fill="#22c55e" filter="url(#shadow)"/>
+  <text x="450" y="135" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Team</text>
+  <text x="450" y="148" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Lead</text>
+  <line x1="450" y1="250" x2="450" y2="180" stroke="#22c55e" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Team Lead issues -->
+  <rect x="520" y="100" width="150" height="80" rx="6" fill="#f0fdf4" stroke="#22c55e"/>
+  <text x="595" y="120" font-size="9" font-weight="bold" fill="#166534" text-anchor="middle">Contact For:</text>
+  <text x="530" y="138" font-size="8" fill="#166534">• Policy questions</text>
+  <text x="530" y="152" font-size="8" fill="#166534">• Fee approval ($100-$500)</text>
+  <text x="530" y="166" font-size="8" fill="#166534">• Workflow exceptions</text>
+
+  <!-- Manager -->
+  <circle cx="250" cy="140" r="40" fill="#f97316" filter="url(#shadow)"/>
+  <text x="250" y="145" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Manager</text>
+  <line x1="405" y1="265" x2="290" y2="170" stroke="#f97316" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Manager issues -->
+  <rect x="80" y="100" width="150" height="80" rx="6" fill="#fff7ed" stroke="#f97316"/>
+  <text x="155" y="120" font-size="9" font-weight="bold" fill="#9a3412" text-anchor="middle">Contact For:</text>
+  <text x="90" y="138" font-size="8" fill="#9a3412">• High fees (&gt;$500)</text>
+  <text x="90" y="152" font-size="8" fill="#9a3412">• Timeline issues</text>
+  <text x="90" y="166" font-size="8" fill="#9a3412">• Publisher escalations</text>
+
+  <!-- Senior Specialist -->
+  <circle cx="650" cy="140" r="40" fill="#8b5cf6" filter="url(#shadow)"/>
+  <text x="650" y="135" font-size="9" font-weight="bold" fill="white" text-anchor="middle">Senior</text>
+  <text x="650" y="148" font-size="9" font-weight="bold" fill="white" text-anchor="middle">Specialist</text>
+  <line x1="495" y1="265" x2="615" y2="170" stroke="#8b5cf6" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Senior Specialist issues -->
+  <rect x="700" y="100" width="150" height="80" rx="6" fill="#f3e8ff" stroke="#8b5cf6"/>
+  <text x="775" y="120" font-size="9" font-weight="bold" fill="#7c3aed" text-anchor="middle">Contact For:</text>
+  <text x="710" y="138" font-size="8" fill="#7c3aed">• Complex rights chains</text>
+  <text x="710" y="152" font-size="8" fill="#7c3aed">• Training questions</text>
+  <text x="710" y="166" font-size="8" fill="#7c3aed">• Quality review</text>
+
+  <!-- Editorial -->
+  <circle cx="180" cy="300" r="40" fill="#06b6d4" filter="url(#shadow)"/>
+  <text x="180" y="305" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Editorial</text>
+  <line x1="400" y1="300" x2="220" y2="300" stroke="#06b6d4" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Editorial issues -->
+  <rect x="30" y="260" width="130" height="80" rx="6" fill="#ecfeff" stroke="#06b6d4"/>
+  <text x="95" y="280" font-size="9" font-weight="bold" fill="#0e7490" text-anchor="middle">Contact For:</text>
+  <text x="40" y="298" font-size="8" fill="#0e7490">• Content questions</text>
+  <text x="40" y="312" font-size="8" fill="#0e7490">• Substitutions</text>
+  <text x="40" y="326" font-size="8" fill="#0e7490">• Timeline changes</text>
+
+  <!-- IT/Technology -->
+  <circle cx="720" cy="300" r="40" fill="#64748b" filter="url(#shadow)"/>
+  <text x="720" y="305" font-size="10" font-weight="bold" fill="white" text-anchor="middle">IT</text>
+  <line x1="500" y1="300" x2="680" y2="300" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- IT issues -->
+  <rect x="770" y="260" width="120" height="80" rx="6" fill="#f8fafc" stroke="#64748b"/>
+  <text x="830" y="280" font-size="9" font-weight="bold" fill="#475569" text-anchor="middle">Contact For:</text>
+  <text x="780" y="298" font-size="8" fill="#475569">• RPC issues</text>
+  <text x="780" y="312" font-size="8" fill="#475569">• System access</text>
+  <text x="780" y="326" font-size="8" fill="#475569">• Technical support</text>
+
+  <!-- Finance -->
+  <circle cx="250" cy="460" r="40" fill="#eab308" filter="url(#shadow)"/>
+  <text x="250" y="465" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Finance</text>
+  <line x1="410" y1="340" x2="290" y2="430" stroke="#eab308" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Finance issues -->
+  <rect x="80" y="420" width="150" height="80" rx="6" fill="#fefce8" stroke="#eab308"/>
+  <text x="155" y="440" font-size="9" font-weight="bold" fill="#a16207" text-anchor="middle">Contact For:</text>
+  <text x="90" y="458" font-size="8" fill="#a16207">• Invoice processing</text>
+  <text x="90" y="472" font-size="8" fill="#a16207">• Payment issues</text>
+  <text x="90" y="486" font-size="8" fill="#a16207">• Budget questions</text>
+
+  <!-- Legal -->
+  <circle cx="650" cy="460" r="40" fill="#ef4444" filter="url(#shadow)"/>
+  <text x="650" y="465" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Legal</text>
+  <line x1="490" y1="340" x2="615" y2="430" stroke="#ef4444" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Legal issues -->
+  <rect x="700" y="420" width="150" height="80" rx="6" fill="#fef2f2" stroke="#ef4444"/>
+  <text x="775" y="440" font-size="9" font-weight="bold" fill="#dc2626" text-anchor="middle">Contact For:</text>
+  <text x="710" y="458" font-size="8" fill="#dc2626">• Complex licensing</text>
+  <text x="710" y="472" font-size="8" fill="#dc2626">• Disputes</text>
+  <text x="710" y="486" font-size="8" fill="#dc2626">• Unusual terms</text>
+
+  <!-- External Contacts at Bottom -->
+  <rect x="300" y="520" width="300" height="70" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="450" y="545" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">External Contacts</text>
+  <text x="320" y="565" font-size="8" fill="#64748b">Rights Holders</text>
+  <text x="400" y="565" font-size="8" fill="#64748b">Publishers</text>
+  <text x="470" y="565" font-size="8" fill="#64748b">CCC</text>
+  <text x="530" y="565" font-size="8" fill="#64748b">Authors</text>
+  <line x1="450" y1="350" x2="450" y2="520" stroke="#64748b" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arr)"/>
+</svg>

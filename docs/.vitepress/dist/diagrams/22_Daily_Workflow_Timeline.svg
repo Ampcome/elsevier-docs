@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 500" font-family="Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="475" y="35" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Daily Workflow Timeline</text>
+  <text x="475" y="55" font-size="12" fill="#64748b" text-anchor="middle">Typical day structure for a Permissions Specialist</text>
+
+  <!-- Timeline Base -->
+  <line x1="50" y1="130" x2="900" y2="130" stroke="#e2e8f0" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Time Markers -->
+  <circle cx="100" cy="130" r="8" fill="#3b82f6"/>
+  <text x="100" y="110" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">9:00</text>
+  <text x="100" y="155" font-size="9" fill="#64748b" text-anchor="middle">Start</text>
+
+  <circle cx="250" cy="130" r="8" fill="#22c55e"/>
+  <text x="250" y="110" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">10:00</text>
+
+  <circle cx="400" cy="130" r="8" fill="#f97316"/>
+  <text x="400" y="110" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">12:00</text>
+  <text x="400" y="155" font-size="9" fill="#64748b" text-anchor="middle">Lunch</text>
+
+  <circle cx="550" cy="130" r="8" fill="#8b5cf6"/>
+  <text x="550" y="110" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">1:00</text>
+
+  <circle cx="700" cy="130" r="8" fill="#06b6d4"/>
+  <text x="700" y="110" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">4:00</text>
+
+  <circle cx="850" cy="130" r="8" fill="#ef4444"/>
+  <text x="850" y="110" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">5:30</text>
+  <text x="850" y="155" font-size="9" fill="#64748b" text-anchor="middle">End</text>
+
+  <!-- Morning Block 1: Review & Planning -->
+  <rect x="70" y="180" width="160" height="120" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="70" y="180" width="160" height="30" rx="8" fill="#3b82f6"/>
+  <text x="150" y="200" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Morning Review</text>
+  <text x="80" y="225" font-size="9" fill="#1e40af">☐ Check RPC dashboard</text>
+  <text x="80" y="242" font-size="9" fill="#1e40af">☐ Review urgent items</text>
+  <text x="80" y="259" font-size="9" fill="#1e40af">☐ Check overnight emails</text>
+  <text x="80" y="276" font-size="9" fill="#1e40af">☐ Plan day's priorities</text>
+  <text x="150" y="295" font-size="8" fill="#64748b" text-anchor="middle">~30 min</text>
+
+  <!-- Morning Block 2: Core Processing -->
+  <rect x="240" y="180" width="160" height="120" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="240" y="180" width="160" height="30" rx="8" fill="#22c55e"/>
+  <text x="320" y="200" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Core Processing</text>
+  <text x="250" y="225" font-size="9" fill="#166534">☐ Process new items</text>
+  <text x="250" y="242" font-size="9" fill="#166534">☐ Send permission requests</text>
+  <text x="250" y="259" font-size="9" fill="#166534">☐ Research rights holders</text>
+  <text x="250" y="276" font-size="9" fill="#166534">☐ Document in RPC</text>
+  <text x="320" y="295" font-size="8" fill="#64748b" text-anchor="middle">~2.5 hours</text>
+
+  <!-- Lunch indicator -->
+  <rect x="380" y="170" width="40" height="140" rx="4" fill="#f5f5f5" stroke="#e2e8f0"/>
+  <text x="400" y="245" font-size="9" fill="#a3a3a3" text-anchor="middle" transform="rotate(-90 400 245)">LUNCH</text>
+
+  <!-- Afternoon Block 1: Follow-ups -->
+  <rect x="430" y="180" width="160" height="120" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="430" y="180" width="160" height="30" rx="8" fill="#8b5cf6"/>
+  <text x="510" y="200" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Follow-ups</text>
+  <text x="440" y="225" font-size="9" fill="#7c3aed">☐ Send follow-up emails</text>
+  <text x="440" y="242" font-size="9" fill="#7c3aed">☐ Process responses</text>
+  <text x="440" y="259" font-size="9" fill="#7c3aed">☐ Handle escalations</text>
+  <text x="440" y="276" font-size="9" fill="#7c3aed">☐ Update statuses</text>
+  <text x="510" y="295" font-size="8" fill="#64748b" text-anchor="middle">~2 hours</text>
+
+  <!-- Afternoon Block 2: Documentation -->
+  <rect x="600" y="180" width="160" height="120" rx="8" fill="#ecfeff" stroke="#06b6d4" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="600" y="180" width="160" height="30" rx="8" fill="#06b6d4"/>
+  <text x="680" y="200" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Documentation</text>
+  <text x="610" y="225" font-size="9" fill="#0e7490">☐ Complete RPC entries</text>
+  <text x="610" y="242" font-size="9" fill="#0e7490">☐ File correspondence</text>
+  <text x="610" y="259" font-size="9" fill="#0e7490">☐ Close resolved items</text>
+  <text x="610" y="276" font-size="9" fill="#0e7490">☐ CCC purchases</text>
+  <text x="680" y="295" font-size="8" fill="#64748b" text-anchor="middle">~1.5 hours</text>
+
+  <!-- End of Day Block -->
+  <rect x="770" y="180" width="140" height="120" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="770" y="180" width="140" height="30" rx="8" fill="#ef4444"/>
+  <text x="840" y="200" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Wrap-up</text>
+  <text x="780" y="225" font-size="9" fill="#dc2626">☐ Review pending items</text>
+  <text x="780" y="242" font-size="9" fill="#dc2626">☐ Flag urgent for tomorrow</text>
+  <text x="780" y="259" font-size="9" fill="#dc2626">☐ Update team lead</text>
+  <text x="780" y="276" font-size="9" fill="#dc2626">☐ Log off systems</text>
+  <text x="840" y="295" font-size="8" fill="#64748b" text-anchor="middle">~30 min</text>
+
+  <!-- Daily Metrics Box -->
+  <rect x="70" y="330" width="400" height="140" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="270" y="355" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Daily Targets</text>
+
+  <rect x="90" y="370" width="80" height="40" rx="4" fill="#dbeafe"/>
+  <text x="130" y="385" font-size="18" font-weight="bold" fill="#1d4ed8" text-anchor="middle">15-20</text>
+  <text x="130" y="402" font-size="8" fill="#1d4ed8" text-anchor="middle">New items</text>
+
+  <rect x="180" y="370" width="80" height="40" rx="4" fill="#dcfce7"/>
+  <text x="220" y="385" font-size="18" font-weight="bold" fill="#16a34a" text-anchor="middle">10-15</text>
+  <text x="220" y="402" font-size="8" fill="#16a34a" text-anchor="middle">Follow-ups</text>
+
+  <rect x="270" y="370" width="80" height="40" rx="4" fill="#fef3c7"/>
+  <text x="310" y="385" font-size="18" font-weight="bold" fill="#d97706" text-anchor="middle">8-12</text>
+  <text x="310" y="402" font-size="8" fill="#d97706" text-anchor="middle">Closures</text>
+
+  <rect x="360" y="370" width="80" height="40" rx="4" fill="#f3e8ff"/>
+  <text x="400" y="385" font-size="18" font-weight="bold" fill="#7c3aed" text-anchor="middle">100%</text>
+  <text x="400" y="402" font-size="8" fill="#7c3aed" text-anchor="middle">RPC Updated</text>
+
+  <text x="270" y="450" font-size="9" fill="#64748b" text-anchor="middle">Numbers vary by role: Associates handle more volume, Seniors handle more complex</text>
+
+  <!-- Tips Box -->
+  <rect x="500" y="330" width="360" height="140" rx="8" fill="#fffbeb" stroke="#fbbf24"/>
+  <text x="680" y="355" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Productivity Tips</text>
+  <text x="520" y="380" font-size="9" fill="#78716c">• Batch similar tasks (all follow-ups together)</text>
+  <text x="520" y="400" font-size="9" fill="#78716c">• Use email templates to save time</text>
+  <text x="520" y="420" font-size="9" fill="#78716c">• Update RPC immediately, not later</text>
+  <text x="520" y="440" font-size="9" fill="#78716c">• Block focus time for complex research</text>
+  <text x="520" y="460" font-size="9" fill="#78716c">• Flag blockers early, don't wait until EOD</text>
+</svg>

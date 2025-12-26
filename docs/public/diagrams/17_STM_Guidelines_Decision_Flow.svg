@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 700" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+    <marker id="arrRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="425" y="35" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">STM Guidelines Eligibility Flow</text>
+  <text x="425" y="55" font-size="12" fill="#64748b" text-anchor="middle">Determine if STM permissions guidelines apply to your request</text>
+
+  <!-- Start -->
+  <rect x="350" y="80" width="150" height="45" rx="22" fill="#3b82f6" filter="url(#shadow)"/>
+  <text x="425" y="108" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Permission Request</text>
+
+  <!-- Q1: Is source publisher STM member? -->
+  <polygon points="425,165 510,210 425,255 340,210" fill="white" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="425" y="200" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">Source publisher</text>
+  <text x="425" y="213" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">STM member?</text>
+  <text x="425" y="228" font-size="8" fill="#64748b" text-anchor="middle">(Check stm-assoc.org)</text>
+
+  <!-- Q2: Is use scholarly/educational? -->
+  <polygon points="425,295 510,340 425,385 340,340" fill="white" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="425" y="330" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">Scholarly or</text>
+  <text x="425" y="343" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">educational use?</text>
+  <text x="425" y="358" font-size="8" fill="#64748b" text-anchor="middle">(Not commercial)</text>
+
+  <!-- Q3: Figures/tables ≤3? -->
+  <polygon points="300,420 385,465 300,510 215,465" fill="white" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="300" y="455" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">≤3 figures</text>
+  <text x="300" y="468" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">or tables?</text>
+  <text x="300" y="483" font-size="8" fill="#64748b" text-anchor="middle">(From same article)</text>
+
+  <!-- Q3b: Text within limits? -->
+  <polygon points="550,420 635,465 550,510 465,465" fill="white" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="550" y="455" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">Text ≤400 words</text>
+  <text x="550" y="468" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">(single extract)?</text>
+  <text x="550" y="483" font-size="8" fill="#64748b" text-anchor="middle">(≤800 total)</text>
+
+  <!-- Q4: Non-competing? -->
+  <polygon points="425,550 510,595 425,640 340,595" fill="white" stroke="#6366f1" stroke-width="2" filter="url(#shadow)"/>
+  <text x="425" y="585" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">Non-competing</text>
+  <text x="425" y="598" font-size="9" font-weight="bold" fill="#1e293b" text-anchor="middle">product?</text>
+  <text x="425" y="613" font-size="8" fill="#64748b" text-anchor="middle">(Not rival publication)</text>
+
+  <!-- Result: STM Applies -->
+  <rect x="620" y="570" width="150" height="60" rx="8" fill="#22c55e" filter="url(#shadow)"/>
+  <text x="695" y="595" font-size="12" font-weight="bold" fill="white" text-anchor="middle">STM APPLIES</text>
+  <text x="695" y="615" font-size="9" fill="#dcfce7" text-anchor="middle">Tier 0 eligible</text>
+
+  <!-- Result: STM Does NOT Apply -->
+  <rect x="620" y="185" width="150" height="60" rx="8" fill="#ef4444" filter="url(#shadow)"/>
+  <text x="695" y="205" font-size="11" font-weight="bold" fill="white" text-anchor="middle">STM DOES NOT</text>
+  <text x="695" y="220" font-size="11" font-weight="bold" fill="white" text-anchor="middle">APPLY</text>
+  <text x="695" y="238" font-size="9" fill="#fecaca" text-anchor="middle">Standard request needed</text>
+
+  <!-- Result: Exceeds Thresholds -->
+  <rect x="80" y="440" width="120" height="60" rx="8" fill="#f97316" filter="url(#shadow)"/>
+  <text x="140" y="463" font-size="10" font-weight="bold" fill="white" text-anchor="middle">EXCEEDS</text>
+  <text x="140" y="478" font-size="10" font-weight="bold" fill="white" text-anchor="middle">THRESHOLDS</text>
+  <text x="140" y="495" font-size="8" fill="#fed7aa" text-anchor="middle">Partial STM may apply</text>
+
+  <!-- Arrows -->
+  <!-- Start to Q1 -->
+  <line x1="425" y1="125" x2="425" y2="165" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Q1 No -->
+  <line x1="510" y1="210" x2="620" y2="210" stroke="#ef4444" stroke-width="2" marker-end="url(#arrRed)"/>
+  <text x="565" y="200" font-size="10" fill="#ef4444" font-weight="bold">No</text>
+
+  <!-- Q1 Yes to Q2 -->
+  <line x1="425" y1="255" x2="425" y2="295" stroke="#22c55e" stroke-width="2" marker-end="url(#arrGreen)"/>
+  <text x="435" y="280" font-size="10" fill="#22c55e" font-weight="bold">Yes</text>
+
+  <!-- Q2 No -->
+  <line x1="510" y1="340" x2="695" y2="340" stroke="#ef4444" stroke-width="2"/>
+  <line x1="695" y1="340" x2="695" y2="245" stroke="#ef4444" stroke-width="2" marker-end="url(#arrRed)"/>
+  <text x="600" y="330" font-size="10" fill="#ef4444" font-weight="bold">No</text>
+
+  <!-- Q2 Yes - branch to both Q3 -->
+  <line x1="425" y1="385" x2="425" y2="405" stroke="#22c55e" stroke-width="2"/>
+  <line x1="300" y1="405" x2="550" y2="405" stroke="#22c55e" stroke-width="2"/>
+  <line x1="300" y1="405" x2="300" y2="420" stroke="#22c55e" stroke-width="2" marker-end="url(#arrGreen)"/>
+  <line x1="550" y1="405" x2="550" y2="420" stroke="#22c55e" stroke-width="2" marker-end="url(#arrGreen)"/>
+  <text x="350" y="398" font-size="10" fill="#22c55e" font-weight="bold">Yes</text>
+  <text x="425" y="415" font-size="8" fill="#64748b" text-anchor="middle">Check content type</text>
+
+  <!-- Q3a No (exceeds) -->
+  <line x1="215" y1="465" x2="200" y2="470" stroke="#f97316" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="195" y="455" font-size="9" fill="#f97316">No</text>
+
+  <!-- Q3b No (exceeds) -->
+  <line x1="635" y1="465" x2="695" y2="465" stroke="#ef4444" stroke-width="2"/>
+  <line x1="695" y1="465" x2="695" y2="245" stroke="#ef4444" stroke-width="2" marker-end="url(#arrRed)"/>
+  <text x="655" y="455" font-size="9" fill="#ef4444">No</text>
+
+  <!-- Q3a/Q3b Yes to Q4 -->
+  <line x1="300" y1="510" x2="300" y2="530" stroke="#22c55e" stroke-width="2"/>
+  <line x1="550" y1="510" x2="550" y2="530" stroke="#22c55e" stroke-width="2"/>
+  <line x1="300" y1="530" x2="550" y2="530" stroke="#22c55e" stroke-width="2"/>
+  <line x1="425" y1="530" x2="425" y2="550" stroke="#22c55e" stroke-width="2" marker-end="url(#arrGreen)"/>
+  <text x="320" y="520" font-size="9" fill="#22c55e">Yes</text>
+  <text x="530" y="520" font-size="9" fill="#22c55e">Yes</text>
+
+  <!-- Q4 No -->
+  <line x1="340" y1="595" x2="200" y2="595" stroke="#ef4444" stroke-width="2"/>
+  <line x1="200" y1="595" x2="200" y2="215" stroke="#ef4444" stroke-width="2"/>
+  <line x1="200" y1="215" x2="340" y2="215" stroke="#ef4444" stroke-width="2"/>
+  <text x="250" y="585" font-size="9" fill="#ef4444">No</text>
+
+  <!-- Q4 Yes to Success -->
+  <line x1="510" y1="595" x2="620" y2="595" stroke="#22c55e" stroke-width="2" marker-end="url(#arrGreen)"/>
+  <text x="565" y="585" font-size="10" fill="#22c55e" font-weight="bold">Yes</text>
+
+  <!-- Thresholds Reference Box -->
+  <rect x="30" y="80" width="180" height="120" rx="6" fill="#eff6ff" stroke="#3b82f6"/>
+  <text x="120" y="100" font-size="10" font-weight="bold" fill="#1d4ed8" text-anchor="middle">STM Thresholds</text>
+  <text x="40" y="120" font-size="9" fill="#1e40af">Figures/Tables:</text>
+  <text x="50" y="135" font-size="8" fill="#3b82f6">• ≤3 from journal article</text>
+  <text x="50" y="148" font-size="8" fill="#3b82f6">• ≤3 from book chapter</text>
+  <text x="40" y="165" font-size="9" fill="#1e40af">Text:</text>
+  <text x="50" y="180" font-size="8" fill="#3b82f6">• ≤400 words (single)</text>
+  <text x="50" y="193" font-size="8" fill="#3b82f6">• ≤800 words (total)</text>
+
+  <!-- Key Members Box -->
+  <rect x="30" y="220" width="180" height="140" rx="6" fill="#f0fdf4" stroke="#22c55e"/>
+  <text x="120" y="240" font-size="10" font-weight="bold" fill="#166534" text-anchor="middle">Major STM Members</text>
+  <text x="45" y="260" font-size="9" fill="#15803d">✓ Springer Nature</text>
+  <text x="45" y="277" font-size="9" fill="#15803d">✓ Wiley</text>
+  <text x="45" y="294" font-size="9" fill="#15803d">✓ Elsevier</text>
+  <text x="45" y="311" font-size="9" fill="#15803d">✓ Taylor &amp; Francis</text>
+  <text x="45" y="328" font-size="9" fill="#15803d">✓ SAGE, OUP, ACS</text>
+  <text x="45" y="350" font-size="8" fill="#64748b">Always verify at stm-assoc.org</text>
+</svg>

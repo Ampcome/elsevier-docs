@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1F4E79"/>
+      <stop offset="100%" style="stop-color:#2E75B6"/>
+    </linearGradient>
+    <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E3F2FD"/>
+      <stop offset="50%" style="stop-color:#FFECB3"/>
+      <stop offset="100%" style="stop-color:#FFCDD2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1F4E79"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#FAFBFC"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="url(#headerGrad)"/>
+  <text x="600" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Follow-up and Escalation Cadence</text>
+  <text x="600" y="60" font-family="Arial, sans-serif" font-size="14" fill="#B8D4E8" text-anchor="middle">Current State: Deadline-Driven Chaser Schedule</text>
+  
+  <!-- Timeline Bar -->
+  <rect x="50" y="120" width="1100" height="50" rx="25" fill="url(#timelineGrad)" stroke="#666" stroke-width="1"/>
+  <text x="100" y="150" font-family="Arial" font-size="12" font-weight="bold" fill="#1565C0">Request Sent</text>
+  <text x="580" y="150" font-family="Arial" font-size="12" font-weight="bold" fill="#E65100">Follow-up Period</text>
+  <text x="1050" y="150" font-family="Arial" font-size="12" font-weight="bold" fill="#C62828">Deadline</text>
+  
+  <!-- Time markers -->
+  <line x1="100" y1="170" x2="100" y2="185" stroke="#1565C0" stroke-width="2"/>
+  <line x1="350" y1="170" x2="350" y2="185" stroke="#FF9800" stroke-width="2"/>
+  <line x1="550" y1="170" x2="550" y2="185" stroke="#FF9800" stroke-width="2"/>
+  <line x1="750" y1="170" x2="750" y2="185" stroke="#E53935" stroke-width="2"/>
+  <line x1="900" y1="170" x2="900" y2="185" stroke="#E53935" stroke-width="2"/>
+  <line x1="1050" y1="170" x2="1050" y2="185" stroke="#C62828" stroke-width="2"/>
+  
+  <!-- Stage boxes -->
+  <!-- Initial Request -->
+  <g transform="translate(50, 200)" filter="url(#shadow)">
+    <rect width="180" height="130" rx="10" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+    <rect width="180" height="35" rx="10" fill="#1565C0"/>
+    <rect x="0" y="25" width="180" height="10" fill="#1565C0"/>
+    <text x="90" y="23" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Initial Request</text>
+    <text x="90" y="60" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">Permission request sent</text>
+    <text x="90" y="78" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">to rightsholder via:</text>
+    <text x="90" y="100" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• STM / CCC / Email</text>
+    <text x="90" y="115" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Web form / Portal</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="230" y1="265" x2="270" y2="265" stroke="#1565C0" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="250" y="255" font-family="Arial" font-size="9" fill="#666">No response</text>
+  
+  <!-- First Chaser -->
+  <g transform="translate(280, 200)" filter="url(#shadow)">
+    <rect width="180" height="130" rx="10" fill="#FFF8E1" stroke="#FF9800" stroke-width="2"/>
+    <rect width="180" height="35" rx="10" fill="#FF9800"/>
+    <rect x="0" y="25" width="180" height="10" fill="#FF9800"/>
+    <text x="90" y="23" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">First Chaser</text>
+    <text x="90" y="60" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">Follow-up email sent</text>
+    <text x="90" y="80" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Resend request details</text>
+    <text x="90" y="95" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Emphasize deadline</text>
+    <text x="90" y="110" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Offer assistance</text>
+    <text x="90" y="125" font-family="Arial" font-size="9" fill="#E65100" text-anchor="middle">Logged in Permission Log</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="460" y1="265" x2="500" y2="265" stroke="#FF9800" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="480" y="255" font-family="Arial" font-size="9" fill="#666">Still no response</text>
+  
+  <!-- Second Chaser -->
+  <g transform="translate(510, 200)" filter="url(#shadow)">
+    <rect width="180" height="130" rx="10" fill="#FFECB3" stroke="#FF9800" stroke-width="2"/>
+    <rect width="180" height="35" rx="10" fill="#F57C00"/>
+    <rect x="0" y="25" width="180" height="10" fill="#F57C00"/>
+    <text x="90" y="23" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Second Chaser</text>
+    <text x="90" y="60" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">Escalated follow-up</text>
+    <text x="90" y="80" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Try alternate email</text>
+    <text x="90" y="95" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• More urgent tone</text>
+    <text x="90" y="110" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Deadline warning</text>
+    <text x="90" y="125" font-family="Arial" font-size="9" fill="#E65100" text-anchor="middle">Date recorded</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="690" y1="265" x2="730" y2="265" stroke="#E65100" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="710" y="255" font-family="Arial" font-size="9" fill="#666">Unresponsive</text>
+  
+  <!-- Phone Call -->
+  <g transform="translate(740, 200)" filter="url(#shadow)">
+    <rect width="180" height="130" rx="10" fill="#FFCDD2" stroke="#E53935" stroke-width="2"/>
+    <rect width="180" height="35" rx="10" fill="#E53935"/>
+    <rect x="0" y="25" width="180" height="10" fill="#E53935"/>
+    <text x="90" y="23" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Phone Attempt</text>
+    <text x="90" y="60" font-family="Arial" font-size="11" fill="#333" text-anchor="middle">Direct contact attempt</text>
+    <text x="90" y="80" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Call rightsholder</text>
+    <text x="90" y="95" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Leave voicemail</text>
+    <text x="90" y="110" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Document attempt</text>
+    <text x="90" y="125" font-family="Arial" font-size="9" fill="#C62828" text-anchor="middle">Last resort before escalation</text>
+  </g>
+  
+  <!-- Arrow -->
+  <line x1="920" y1="265" x2="960" y2="265" stroke="#E53935" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="940" y="255" font-family="Arial" font-size="9" fill="#666">No response</text>
+  
+  <!-- Escalation -->
+  <g transform="translate(970, 200)" filter="url(#shadow)">
+    <rect width="180" height="130" rx="10" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+    <rect width="180" height="35" rx="10" fill="#C62828"/>
+    <rect x="0" y="25" width="180" height="10" fill="#C62828"/>
+    <text x="90" y="23" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">ESCALATION</text>
+    <text x="90" y="60" font-family="Arial" font-size="11" fill="#C62828" text-anchor="middle" font-weight="bold">→ CDS Decision</text>
+    <text x="90" y="85" font-family="Arial" font-size="10" fill="#333" text-anchor="middle">Options:</text>
+    <text x="90" y="102" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Replace content</text>
+    <text x="90" y="117" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">• Delete item</text>
+  </g>
+  
+  <!-- Success Path -->
+  <g transform="translate(50, 380)" filter="url(#shadow)">
+    <rect width="1100" height="100" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="550" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#2E7D32" text-anchor="middle">✓ RESOLUTION PATH (Can occur at any stage)</text>
+    
+    <rect x="30" y="50" width="200" height="40" rx="5" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1"/>
+    <text x="130" y="75" font-family="Arial" font-size="11" fill="#1B5E20" text-anchor="middle">Response Received</text>
+    
+    <line x1="230" y1="70" x2="270" y2="70" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <rect x="280" y="50" width="200" height="40" rx="5" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1"/>
+    <text x="380" y="75" font-family="Arial" font-size="11" fill="#1B5E20" text-anchor="middle">Permission Granted</text>
+    
+    <line x1="480" y1="70" x2="520" y2="70" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <rect x="530" y="50" width="200" height="40" rx="5" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1"/>
+    <text x="630" y="75" font-family="Arial" font-size="11" fill="#1B5E20" text-anchor="middle">License Captured</text>
+    
+    <line x1="730" y1="70" x2="770" y2="70" stroke="#2E7D32" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <rect x="780" y="50" width="200" height="40" rx="5" fill="#A5D6A7" stroke="#2E7D32" stroke-width="2"/>
+    <text x="880" y="75" font-family="Arial" font-size="11" font-weight="bold" fill="#1B5E20" text-anchor="middle">Status: RESOLVED</text>
+  </g>
+  
+  <!-- Fee Escalation Box -->
+  <g transform="translate(50, 510)" filter="url(#shadow)">
+    <rect width="350" height="110" rx="10" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+    <text x="175" y="30" font-family="Arial" font-size="13" font-weight="bold" fill="#E65100" text-anchor="middle">💰 Fee-Related Escalation</text>
+    <text x="30" y="55" font-family="Arial" font-size="10" fill="#333">If permission requires payment:</text>
+    <text x="40" y="75" font-family="Arial" font-size="10" fill="#666">• Compare to per-item budget limit</text>
+    <text x="40" y="92" font-family="Arial" font-size="10" fill="#666">• If exceeds: Query to CDS for approval</text>
+    <text x="40" y="109" font-family="Arial" font-size="10" fill="#666">• CDS decides: Pay / Replace / Delete</text>
+  </g>
+  
+  <!-- Tracking Box -->
+  <g transform="translate(420, 510)" filter="url(#shadow)">
+    <rect width="350" height="110" rx="10" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+    <text x="175" y="30" font-family="Arial" font-size="13" font-weight="bold" fill="#1565C0" text-anchor="middle">📝 Tracking in Permission Log</text>
+    <text x="30" y="55" font-family="Arial" font-size="10" fill="#333">All communications recorded:</text>
+    <text x="40" y="75" font-family="Arial" font-size="10" fill="#666">• Email Chaser 1 Date</text>
+    <text x="40" y="92" font-family="Arial" font-size="10" fill="#666">• Email Chaser 2 Date</text>
+    <text x="40" y="109" font-family="Arial" font-size="10" fill="#666">• Comments (free text notes)</text>
+    <text x="200" y="75" font-family="Arial" font-size="10" fill="#666">• Applied Date</text>
+    <text x="200" y="92" font-family="Arial" font-size="10" fill="#666">• Resolved Date</text>
+    <text x="200" y="109" font-family="Arial" font-size="10" fill="#666">• Mode of Contact</text>
+  </g>
+  
+  <!-- Reporting Box -->
+  <g transform="translate(790, 510)" filter="url(#shadow)">
+    <rect width="360" height="110" rx="10" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+    <text x="180" y="30" font-family="Arial" font-size="13" font-weight="bold" fill="#7B1FA2" text-anchor="middle">📊 Reflected in Weekly Status Report</text>
+    <text x="30" y="55" font-family="Arial" font-size="10" fill="#333">WSR includes pending/escalation status:</text>
+    <text x="40" y="75" font-family="Arial" font-size="10" fill="#666">• Permissions Yet to be Resolved</text>
+    <text x="40" y="92" font-family="Arial" font-size="10" fill="#666">• Permissions in DE Query</text>
+    <text x="40" y="109" font-family="Arial" font-size="10" fill="#666">• DE Query details (Item ID, Rightsholder, Comments)</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="600" y="660" font-family="Arial" font-size="11" fill="#666" text-anchor="middle">Publishing Services – Permissions Seeking | Follow-up and Escalation Cadence | December 2025</text>
+</svg>

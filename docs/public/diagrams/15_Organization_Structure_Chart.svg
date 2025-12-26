@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 650" font-family="Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="execGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b21b6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mgrGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="475" y="35" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Publishing Services Organization Structure</text>
+  <text x="475" y="55" font-size="12" fill="#64748b" text-anchor="middle">Permissions Seeking Team Hierarchy</text>
+
+  <!-- VP Level -->
+  <rect x="350" y="80" width="250" height="55" rx="8" fill="url(#execGrad)" filter="url(#shadow)"/>
+  <text x="475" y="105" font-size="13" font-weight="bold" fill="white" text-anchor="middle">VP, Health Content Management</text>
+  <text x="475" y="122" font-size="10" fill="#e9d5ff" text-anchor="middle">Executive Leadership</text>
+
+  <!-- Director Level -->
+  <rect x="350" y="165" width="250" height="55" rx="8" fill="url(#execGrad)" filter="url(#shadow)"/>
+  <text x="475" y="190" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Director, Publishing Services</text>
+  <text x="475" y="207" font-size="10" fill="#e9d5ff" text-anchor="middle">Strategic Direction</text>
+
+  <!-- Connection VP to Director -->
+  <line x1="475" y1="135" x2="475" y2="165" stroke="#7c3aed" stroke-width="3"/>
+
+  <!-- Manager Level -->
+  <!-- HS Manager -->
+  <rect x="100" y="260" width="200" height="55" rx="8" fill="url(#mgrGrad)" filter="url(#shadow)"/>
+  <text x="200" y="285" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Manager, HS Permissions</text>
+  <text x="200" y="302" font-size="10" fill="#dbeafe" text-anchor="middle">770 projects/year</text>
+
+  <!-- S&T Manager -->
+  <rect x="650" y="260" width="200" height="55" rx="8" fill="url(#mgrGrad)" filter="url(#shadow)"/>
+  <text x="750" y="285" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Manager, S&T Permissions</text>
+  <text x="750" y="302" font-size="10" fill="#dbeafe" text-anchor="middle">1,480 projects/year</text>
+
+  <!-- Connections Director to Managers -->
+  <line x1="475" y1="220" x2="475" y2="240" stroke="#7c3aed" stroke-width="2"/>
+  <line x1="200" y1="240" x2="750" y2="240" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="200" y1="240" x2="200" y2="260" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="750" y1="240" x2="750" y2="260" stroke="#3b82f6" stroke-width="2"/>
+
+  <!-- HS Team Structure -->
+  <!-- HS Copyrights Specialists -->
+  <rect x="130" y="350" width="140" height="50" rx="6" fill="url(#hsGrad)" filter="url(#shadow)"/>
+  <text x="200" y="372" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Copyrights</text>
+  <text x="200" y="388" font-size="10" fill="#dcfce7" text-anchor="middle">Specialists (CS)</text>
+
+  <!-- Connections HS Manager to Team -->
+  <line x1="200" y1="315" x2="200" y2="350" stroke="#22c55e" stroke-width="2"/>
+
+  <!-- S&T Team Structure -->
+  <!-- S&T Copyrights Specialists -->
+  <rect x="680" y="350" width="140" height="50" rx="6" fill="url(#stGrad)" filter="url(#shadow)"/>
+  <text x="750" y="372" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Copyrights</text>
+  <text x="750" y="388" font-size="10" fill="#fed7aa" text-anchor="middle">Specialists (CS)</text>
+
+  <!-- Connections S&T Manager to Team -->
+  <line x1="750" y1="315" x2="750" y2="350" stroke="#f97316" stroke-width="2"/>
+
+  <!-- Division Labels -->
+  <rect x="50" y="510" width="300" height="100" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="200" y="535" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Health Sciences (HS)</text>
+  <text x="60" y="560" font-size="10" fill="#166534">Focus Areas:</text>
+  <text x="60" y="578" font-size="9" fill="#15803d">• Medical textbooks &amp; clinical references</text>
+  <text x="60" y="594" font-size="9" fill="#15803d">• Healthcare education materials</text>
+
+  <rect x="600" y="510" width="300" height="100" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="750" y="535" font-size="12" font-weight="bold" fill="#9a3412" text-anchor="middle">Science &amp; Technology (S&T)</text>
+  <text x="610" y="560" font-size="10" fill="#9a3412">Focus Areas:</text>
+  <text x="610" y="578" font-size="9" fill="#c2410c">• Scientific journal reprints</text>
+  <text x="610" y="594" font-size="9" fill="#c2410c">• Research figures &amp; technical illustrations</text>
+
+  <!-- Geographic Distribution -->
+  <rect x="380" y="510" width="190" height="100" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+  <text x="475" y="535" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Global Locations</text>
+  <circle cx="400" cy="560" r="6" fill="#3b82f6"/>
+  <text x="415" y="564" font-size="9" fill="#64748b">Chennai (Primary)</text>
+  <circle cx="400" cy="580" r="6" fill="#22c55e"/>
+  <text x="415" y="584" font-size="9" fill="#64748b">Philippines (Support)</text>
+  <circle cx="400" cy="600" r="6" fill="#f97316"/>
+  <text x="415" y="604" font-size="9" fill="#64748b">US/UK (Relations)</text>
+</svg>

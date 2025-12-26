@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" font-family="Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="level5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="100%" style="stop-color:#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="level4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <linearGradient id="level3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#eab308"/>
+      <stop offset="100%" style="stop-color:#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="level2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="level1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="35" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Escalation Pyramid</text>
+  <text x="400" y="55" font-size="12" fill="#64748b" text-anchor="middle">When and how to escalate permission issues</text>
+
+  <!-- Level 5 - Top of Pyramid -->
+  <polygon points="400,90 320,160 480,160" fill="url(#level5)" filter="url(#shadow)"/>
+  <text x="400" y="140" font-size="11" font-weight="bold" fill="white" text-anchor="middle">LEVEL 5</text>
+
+  <!-- Level 4 -->
+  <polygon points="320,165 260,235 540,235 480,165" fill="url(#level4)" filter="url(#shadow)"/>
+  <text x="400" y="210" font-size="12" font-weight="bold" fill="white" text-anchor="middle">LEVEL 4</text>
+
+  <!-- Level 3 -->
+  <polygon points="260,240 200,310 600,310 540,240" fill="url(#level3)" filter="url(#shadow)"/>
+  <text x="400" y="285" font-size="12" font-weight="bold" fill="white" text-anchor="middle">LEVEL 3</text>
+
+  <!-- Level 2 -->
+  <polygon points="200,315 140,385 660,385 600,315" fill="url(#level2)" filter="url(#shadow)"/>
+  <text x="400" y="360" font-size="12" font-weight="bold" fill="white" text-anchor="middle">LEVEL 2</text>
+
+  <!-- Level 1 - Base -->
+  <polygon points="140,390 80,460 720,460 660,390" fill="url(#level1)" filter="url(#shadow)"/>
+  <text x="400" y="435" font-size="12" font-weight="bold" fill="white" text-anchor="middle">LEVEL 1</text>
+
+  <!-- Level Details - Right Side -->
+  <rect x="540" y="95" width="230" height="55" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="655" y="115" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">Director</text>
+  <text x="550" y="132" font-size="9" fill="#7f1d1d">• Strategic/legal issues</text>
+  <text x="550" y="145" font-size="9" fill="#7f1d1d">• Policy exceptions • Litigation risk</text>
+
+  <rect x="570" y="170" width="210" height="55" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="675" y="190" font-size="11" font-weight="bold" fill="#ea580c" text-anchor="middle">Manager</text>
+  <text x="580" y="207" font-size="9" fill="#9a3412">• Budget/cost approval (&gt;$500)</text>
+  <text x="580" y="220" font-size="9" fill="#9a3412">• Timeline impact • Publisher relations</text>
+
+  <rect x="610" y="245" width="180" height="55" rx="6" fill="#fefce8" stroke="#eab308" stroke-width="2"/>
+  <text x="700" y="265" font-size="11" font-weight="bold" fill="#ca8a04" text-anchor="middle">Team Lead</text>
+  <text x="620" y="282" font-size="9" fill="#854d0e">• Policy decisions</text>
+  <text x="620" y="295" font-size="9" fill="#854d0e">• Fee approval ($100-$500)</text>
+
+  <rect x="670" y="320" width="120" height="55" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="730" y="340" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle">Senior</text>
+  <text x="730" y="353" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle">Specialist</text>
+  <text x="680" y="368" font-size="9" fill="#1e40af">• Complex cases</text>
+
+  <rect x="730" y="395" width="60" height="55" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="760" y="420" font-size="10" font-weight="bold" fill="#16a34a" text-anchor="middle">You</text>
+  <text x="760" y="438" font-size="8" fill="#166534" text-anchor="middle">Standard</text>
+
+  <!-- Connecting lines -->
+  <line x1="490" y1="125" x2="540" y2="125" stroke="#ef4444" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="540" y1="197" x2="570" y2="197" stroke="#f97316" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="570" y1="272" x2="610" y2="272" stroke="#eab308" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="630" y1="347" x2="670" y2="347" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="700" y1="422" x2="730" y2="422" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- Triggers - Left Side -->
+  <rect x="30" y="90" width="200" height="370" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="130" y="115" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">When to Escalate</text>
+
+  <circle cx="55" cy="145" r="8" fill="#ef4444"/>
+  <text x="70" y="142" font-size="9" fill="#1e293b" font-weight="bold">Level 5 Triggers:</text>
+  <text x="70" y="155" font-size="8" fill="#64748b">Legal/litigation concerns</text>
+  <text x="70" y="167" font-size="8" fill="#64748b">Policy changes needed</text>
+
+  <circle cx="55" cy="195" r="8" fill="#f97316"/>
+  <text x="70" y="192" font-size="9" fill="#1e293b" font-weight="bold">Level 4 Triggers:</text>
+  <text x="70" y="205" font-size="8" fill="#64748b">Fees &gt; $500</text>
+  <text x="70" y="217" font-size="8" fill="#64748b">Project timeline at risk</text>
+  <text x="70" y="229" font-size="8" fill="#64748b">Publisher relationship issue</text>
+
+  <circle cx="55" cy="257" r="8" fill="#eab308"/>
+  <text x="70" y="254" font-size="9" fill="#1e293b" font-weight="bold">Level 3 Triggers:</text>
+  <text x="70" y="267" font-size="8" fill="#64748b">Fees $100-$500</text>
+  <text x="70" y="279" font-size="8" fill="#64748b">Rights holder disputes</text>
+  <text x="70" y="291" font-size="8" fill="#64748b">Process exceptions</text>
+
+  <circle cx="55" cy="319" r="8" fill="#3b82f6"/>
+  <text x="70" y="316" font-size="9" fill="#1e293b" font-weight="bold">Level 2 Triggers:</text>
+  <text x="70" y="329" font-size="8" fill="#64748b">Complex rights chains</text>
+  <text x="70" y="341" font-size="8" fill="#64748b">Multiple failed contacts</text>
+  <text x="70" y="353" font-size="8" fill="#64748b">Unusual terms</text>
+
+  <circle cx="55" cy="381" r="8" fill="#22c55e"/>
+  <text x="70" y="378" font-size="9" fill="#1e293b" font-weight="bold">Level 1 (Handle):</text>
+  <text x="70" y="391" font-size="8" fill="#64748b">Standard requests</text>
+  <text x="70" y="403" font-size="8" fill="#64748b">Tier 0/1/4 items</text>
+  <text x="70" y="415" font-size="8" fill="#64748b">Routine follow-ups</text>
+  <text x="70" y="427" font-size="8" fill="#64748b">Fees ≤ $100</text>
+
+  <!-- Response Time Expectations -->
+  <rect x="280" y="480" width="240" height="60" rx="6" fill="#fffbeb" stroke="#fbbf24"/>
+  <text x="400" y="500" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">Expected Response Times</text>
+  <text x="290" y="518" font-size="9" fill="#78716c">L1-L2: Same day | L3: 1 day | L4: 2-3 days | L5: 1 week</text>
+  <text x="290" y="532" font-size="8" fill="#a3a3a3">Always document escalation reason in RPC</text>
+</svg>

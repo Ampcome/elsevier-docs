@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="35" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Health Sciences vs Science &amp; Technology</text>
+  <text x="450" y="55" font-size="12" fill="#64748b" text-anchor="middle">Side-by-side comparison of the two permission divisions</text>
+
+  <!-- Column Headers -->
+  <rect x="50" y="80" width="380" height="50" rx="8" fill="#22c55e" filter="url(#shadow)"/>
+  <text x="240" y="112" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Health Sciences (HS)</text>
+
+  <rect x="470" y="80" width="380" height="50" rx="8" fill="#f97316" filter="url(#shadow)"/>
+  <text x="660" y="112" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Science &amp; Technology (S&amp;T)</text>
+
+  <!-- Row 1: Annual Projects -->
+  <rect x="50" y="140" width="380" height="60" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="60" y="160" font-size="10" font-weight="bold" fill="#166534">Annual Projects</text>
+  <text x="60" y="180" font-size="24" font-weight="bold" fill="#22c55e">770/year</text>
+
+  <rect x="470" y="140" width="380" height="60" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="480" y="160" font-size="10" font-weight="bold" fill="#9a3412">Annual Projects</text>
+  <text x="480" y="180" font-size="24" font-weight="bold" fill="#f97316">1,480/year</text>
+
+  <!-- Row 2: Organization -->
+  <rect x="50" y="210" width="380" height="60" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="60" y="230" font-size="10" font-weight="bold" fill="#166534">Organization</text>
+  <text x="60" y="250" font-size="14" fill="#22c55e">Total Org: 60+ FTE</text>
+  <text x="220" y="250" font-size="11" fill="#64748b">| Permissions: 19 FTE</text>
+
+  <rect x="470" y="210" width="380" height="60" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="480" y="230" font-size="10" font-weight="bold" fill="#9a3412">Divisions Served</text>
+  <text x="480" y="250" font-size="14" fill="#f97316">RREF, Hot Topics, MRW</text>
+
+  <!-- Row 3: Tier Structure -->
+  <rect x="50" y="280" width="380" height="100" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="60" y="300" font-size="10" font-weight="bold" fill="#166534">Tier Structure</text>
+  <rect x="70" y="310" width="100" height="25" rx="4" fill="#8b5cf6"/>
+  <text x="120" y="327" font-size="10" fill="white" text-anchor="middle">Tier 0</text>
+  <rect x="180" y="310" width="100" height="25" rx="4" fill="#3b82f6"/>
+  <text x="230" y="327" font-size="10" fill="white" text-anchor="middle">Tier 4</text>
+  <rect x="290" y="310" width="120" height="25" rx="4" fill="#f97316"/>
+  <text x="350" y="327" font-size="10" fill="white" text-anchor="middle">Rule of 10</text>
+  <text x="60" y="365" font-size="9" fill="#64748b">Validation → Full Service → Assessment Only</text>
+
+  <rect x="470" y="280" width="380" height="100" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="480" y="300" font-size="10" font-weight="bold" fill="#9a3412">Tier Structure</text>
+  <rect x="490" y="310" width="100" height="25" rx="4" fill="#22c55e"/>
+  <text x="540" y="327" font-size="10" fill="white" text-anchor="middle">Tier 1</text>
+  <rect x="600" y="310" width="100" height="25" rx="4" fill="#eab308"/>
+  <text x="650" y="327" font-size="10" fill="white" text-anchor="middle">Tier 2</text>
+  <rect x="710" y="310" width="100" height="25" rx="4" fill="#06b6d4"/>
+  <text x="760" y="327" font-size="10" fill="white" text-anchor="middle">Tier 3</text>
+  <text x="480" y="365" font-size="9" fill="#64748b">Author Obtains → CS Obtains → Full Service</text>
+
+  <!-- Row 4: Content Types -->
+  <rect x="50" y="390" width="380" height="80" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="60" y="410" font-size="10" font-weight="bold" fill="#166534">Primary Content</text>
+  <text x="60" y="430" font-size="9" fill="#166534">• Medical textbooks &amp; clinical references</text>
+  <text x="60" y="445" font-size="9" fill="#166534">• Clinical images &amp; anatomical diagrams</text>
+  <text x="60" y="460" font-size="9" fill="#166534">• Healthcare education materials</text>
+
+  <rect x="470" y="390" width="380" height="80" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="480" y="410" font-size="10" font-weight="bold" fill="#9a3412">Primary Content</text>
+  <text x="480" y="430" font-size="9" fill="#9a3412">• Scientific journal reprints</text>
+  <text x="480" y="445" font-size="9" fill="#9a3412">• Research figures &amp; data visualizations</text>
+  <text x="480" y="460" font-size="9" fill="#9a3412">• Conference proceedings</text>
+
+  <!-- Row 5: Key Characteristics -->
+  <rect x="50" y="480" width="380" height="100" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="60" y="500" font-size="10" font-weight="bold" fill="#166534">Key Characteristics</text>
+  <text x="60" y="520" font-size="9" fill="#166534">✓ Medical textbooks &amp; clinical references</text>
+  <text x="60" y="535" font-size="9" fill="#166534">✓ Healthcare education materials</text>
+  <text x="60" y="550" font-size="9" fill="#166534">✓ Patient privacy considerations</text>
+  <text x="60" y="565" font-size="9" fill="#166534">✓ CDS involvement in Tier 0/4</text>
+
+  <rect x="470" y="480" width="380" height="100" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="480" y="500" font-size="10" font-weight="bold" fill="#9a3412">Key Characteristics</text>
+  <text x="480" y="520" font-size="9" fill="#9a3412">✓ Scientific journals &amp; research figures</text>
+  <text x="480" y="535" font-size="9" fill="#9a3412">✓ Technical illustrations</text>
+  <text x="480" y="550" font-size="9" fill="#9a3412">✓ Chapter tracker system used</text>
+  <text x="480" y="565" font-size="9" fill="#9a3412">✓ Author-driven workflows (Tier 1/2)</text>
+
+  <!-- Center comparison arrow -->
+  <line x1="450" y1="150" x2="450" y2="570" stroke="#e2e8f0" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="450" y="590" font-size="10" fill="#94a3b8" text-anchor="middle">VS</text>
+</svg>
