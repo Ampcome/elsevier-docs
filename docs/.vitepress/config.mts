@@ -78,6 +78,7 @@ export default defineConfig({
           text: 'Playbooks',
           items: [
             { text: 'Overview', link: '/playbooks/' },
+            { text: 'Triggers Overview', link: '/playbooks/triggers' },
             { text: 'Agentic Flow Runbook', link: '/playbooks/agentic-flow-runbook' }
           ]
         },

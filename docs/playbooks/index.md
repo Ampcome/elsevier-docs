@@ -3,6 +3,9 @@
 ## Overview
 This section provides implementation-ready playbooks for the autonomous permissions system. It includes a comprehensive flow runbook, per-flow runbooks, and per-agent runbooks.
 
+## Triggers Overview
+- [Triggers Overview](/playbooks/triggers)
+
 ## Core Runbook
 - [Agentic Flow Runbook](/playbooks/agentic-flow-runbook)
 
