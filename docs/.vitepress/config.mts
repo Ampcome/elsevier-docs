@@ -80,7 +80,8 @@ export default defineConfig({
             { text: 'Overview', link: '/ai-agent-playbook/' },
             { text: 'Triggers Overview', link: '/ai-agent-playbook/triggers' },
             { text: 'Simulators and Scenario Matrix', link: '/ai-agent-playbook/simulators' },
-            { text: 'Agentic Flow Runbook', link: '/ai-agent-playbook/agentic-flow-runbook' }
+            { text: 'Agentic Flow Runbook', link: '/ai-agent-playbook/agentic-flow-runbook' },
+            { text: 'Assistents.ai Flow Build Guide', link: '/ai-agent-playbook/platform-flow-build' }
           ]
         },
         {
