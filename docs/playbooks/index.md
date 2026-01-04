@@ -8,6 +8,7 @@ This section provides implementation-ready playbooks for the autonomous permissi
 
 ## Core Runbook
 - [Agentic Flow Runbook](/playbooks/agentic-flow-runbook)
+- Production Readiness checklist is included at the end of the runbook.
 
 ## Flow Runbooks
 - [Flow 01 - Intake and Sync](/playbooks/flows/01-intake-sync)
