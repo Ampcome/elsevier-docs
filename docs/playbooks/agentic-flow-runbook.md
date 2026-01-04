@@ -568,3 +568,67 @@ Outputs
 - Evidence and reporting artifacts are recorded in documents.
 - Fees and invoices are recorded for paid permissions.
 - Audit and status history are complete for all transitions.
+
+## Production Readiness - Remaining Decisions and Interfaces
+
+This section captures the remaining requirements that must be defined to make the system fully autonomous in production.
+
+### System Authority and Conflict Resolution
+- Define which system is authoritative per field (RPC vs ELSA vs EMSS).
+- If conflicts occur:
+  - RPC remains authoritative for project deadlines, budgets, and completion state.
+  - ELSA or EMSS can override chapter details only if RPC does not contain that data.
+  - Rights item status in RPC overrides local rights_items when explicitly updated.
+
+### Inbound Email Correlation
+- Define a deterministic mapping from inbound email to rights_items:
+  - Primary: emails.message_id or thread_id matched to permission_requests.email_message_id.
+  - Secondary: subject pattern including Item ID or ISBN.
+  - Fallback: manual routing to author_query or editorial_query with human confirmation.
+
+### Phone Attempts and Alternate Contacts
+- Define how phone attempts are recorded:
+  - Store call attempts as emails records with a call tag in attachments or notes.
+  - Record call attempt dates in rights_items.internal_notes.
+- Define alternate contact discovery sources and how they are validated.
+
+### Human Decision Capture
+- Define the fields or workflow used to capture approvals and replacements:
+  - Fee approvals update fee_records.approval_status and rights_items.status.
+  - Replacement or deletion decisions update rights_items.status = deleted and rights_items.comments with reason.
+- Define responsible roles for decisions and how they are authenticated.
+
+### Quality Gates Before Closure
+- Define required document checks for closure:
+  - Permission log present in documents for the project.
+  - License evidence present for each resolved item.
+  - Cost sheet present if any fees exist.
+  - Credit line change communication evidence present when credit_line_change exists.
+
+### Publisher Portal Variability
+- Maintain a mapping library for each portal with required fields and error handling.
+- Define fallback path when portal submission fails:
+  - Retry -> switch to direct email -> escalate.
+
+### License Scope Interpretation
+- Define a deterministic rules engine for license scope checks:
+  - Format and distribution must match project formats and territory.
+  - Editions and translations must match project usage.
+  - Restricted use triggers editorial_query with approval required.
+
+### SLA and Escalation Thresholds
+- Define SLA thresholds by tier and division:
+  - When to mark items at risk.
+  - When to generate additional WSR or analysis reports.
+  - Who receives escalations.
+
+### Security and Permissions
+- Define allowed roles for:
+  - Fee approvals
+  - Status overrides
+  - Rightsholder edits
+  - Project closure
+
+### External System Access
+- Confirm whether RPC, ELSA, and EMSS provide APIs.
+- If not, define approved automation paths and credentials handling.
