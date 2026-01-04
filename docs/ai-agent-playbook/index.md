@@ -6,6 +6,9 @@ This section provides implementation-ready playbooks for the autonomous permissi
 ## Triggers Overview
 - [Triggers Overview](/ai-agent-playbook/triggers)
 
+## Simulators
+- [Simulators and Scenario Matrix](/ai-agent-playbook/simulators)
+
 ## Core Runbook
 - [Agentic Flow Runbook](/ai-agent-playbook/agentic-flow-runbook)
 - Production Readiness checklist is included at the end of the runbook.
