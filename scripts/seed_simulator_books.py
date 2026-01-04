@@ -144,12 +144,12 @@ def extract_mentions(text: str, limit: int) -> List[str]:
     return deduped
 
 
-def choose_books(books_dir: Path) -> Iterable[Path]:
+def choose_books(books_dir: Path, include_articles: bool) -> Iterable[Path]:
     dirs = [d for d in books_dir.iterdir() if d.is_dir()]
     names = {d.name for d in dirs}
     for path in sorted(dirs):
         name = path.name
-        if name.startswith("ScienceDirect_articles_"):
+        if name.startswith("ScienceDirect_articles_") and not include_articles:
             continue
         if name.endswith("-1") and name[:-2] in names:
             continue
@@ -394,9 +394,12 @@ def build_chapter_payloads(
 ) -> List[dict]:
     used_numbers = set()
     chapter_records = []
-    for pdf_path in pdf_paths:
-        if "chapter" not in pdf_path.name.lower():
-            continue
+    chapter_candidates = [
+        pdf_path for pdf_path in pdf_paths if "chapter" in pdf_path.name.lower()
+    ]
+    if not chapter_candidates:
+        chapter_candidates = list(pdf_paths)
+    for pdf_path in chapter_candidates:
         chapter_records.append((extract_chapter_number(pdf_path.name), pdf_path))
     chapter_records.sort(key=lambda item: (item[0] is None, item[0] or 0, item[1].name))
 
@@ -437,6 +440,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--books-dir", required=True)
     parser.add_argument("--conn", default=os.getenv("SIM_DB_URL") or os.getenv("DATABASE_URL"))
+    parser.add_argument("--include-articles", action="store_true")
     parser.add_argument("--max-pages", type=int, default=8)
     parser.add_argument("--max-items-per-chapter", type=int, default=12)
     args = parser.parse_args()
@@ -453,7 +457,7 @@ def main() -> int:
     created = 0
     skipped = 0
 
-    for book_dir in choose_books(books_dir):
+    for book_dir in choose_books(books_dir, args.include_articles):
         pdf_paths = sorted(book_dir.glob("*.pdf"))
         if not pdf_paths:
             continue
@@ -490,6 +494,7 @@ def main() -> int:
             "source": "pdf",
             "book_dir": str(book_dir),
             "pdf_count": len(pdf_paths),
+            "include_articles": args.include_articles,
         }
 
         chapter_payloads = build_chapter_payloads(
