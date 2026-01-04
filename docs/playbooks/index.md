@@ -1,4 +1,4 @@
-# Playbooks
+# AI Agent Playbook
 
 ## Overview
 This section provides implementation-ready playbooks for the autonomous permissions system. It includes a comprehensive flow runbook, per-flow runbooks, and per-agent runbooks.

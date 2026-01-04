@@ -17,7 +17,7 @@ export default defineConfig({
       { text: 'Workflows', link: '/workflows/' },
       { text: 'Systems', link: '/systems/' },
       { text: 'Reference', link: '/reference/' },
-      { text: 'Playbooks', link: '/playbooks/' }
+      { text: 'AI Agent Playbook', link: '/playbooks/' }
     ],
 
     sidebar: {
@@ -75,7 +75,7 @@ export default defineConfig({
       ],
       '/playbooks/': [
         {
-          text: 'Playbooks',
+          text: 'AI Agent Playbook',
           items: [
             { text: 'Overview', link: '/playbooks/' },
             { text: 'Triggers Overview', link: '/playbooks/triggers' },
