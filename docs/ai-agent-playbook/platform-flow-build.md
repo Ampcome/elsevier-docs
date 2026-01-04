@@ -62,9 +62,9 @@ All flows accept the same input shape:
 
 ## Template Variables (Important)
 - Use template autocomplete in the UI to insert variables.
-- Format: `{{@<nodeId>:<Label>.<fieldPath>}}`
+- Format: <code v-pre>{{@&lt;nodeId&gt;:&lt;Label&gt;.&lt;fieldPath&gt;}}</code>
 - Trigger data is at the root of trigger output.
-- Use `payload` fields directly, e.g. `{{@triggerNode:Trigger.payload.rpc_project_id}}`.
+- Use `payload` fields directly, e.g. <code v-pre>{{@triggerNode:Trigger.payload.rpc_project_id}}</code>.
 
 ## Action Config Reference
 - Database Query
