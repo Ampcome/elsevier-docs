@@ -134,7 +134,7 @@ export default defineConfig({
 
     footer: {
       message: 'Publishing Services Documentation',
-      copyright: 'Elsevier'
+      copyright: 'Copyright Ampcome - www.ampcome.com'
     }
   }
 })
